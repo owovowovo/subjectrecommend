@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>결과</title>
+</head>
+<body>
+    <h1>과목 선택 결과</h1>
+    {% if courses %}
+        <p>입력하신 {{ dream }}에 추천하는 과목은 {{ courses }}입니다.</p>
+    {% else %}
+        <p>입력하신 {{ dream }}는 사진 내에 없습니다. 사진 내에서 희망하는 학과와 유사한 학과를 찾아 입력해주세요.</p>
+    {% endif %}
+    <a href="/">처음으로 돌아가기</a>
+</body>
+</html>
