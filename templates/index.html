@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>과목 선택 도우미</title>
+</head>
+<body>
+    <h1>2024년 1, 2학년을 위한 과목 선택 도우미</h1>
+    <p>본 프로그램은 졸업생 선배 및 2024년 3학년 재학생 등의 데이터를 기반으로 제작되었습니다.</p>
+    <form action="/result" method="post">
+        <label for="dream">희망하는 학과를 아래 사진에서 골라 입력해주세요:</label>
+        <input type="text" id="dream" name="dream" required>
+        <button type="submit">확인</button>
+    </form>
+    <img src="{{ url_for('static', filename='images/departments.png') }}" alt="학과 선택 이미지">
+</body>
+</html>
